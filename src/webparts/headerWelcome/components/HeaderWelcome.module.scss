@@ -1,0 +1,191 @@
+@import '~office-ui-fabric-react/dist/sass/References.scss';
+@import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
+
+// * {
+//   box-sizing: border-box;
+// }
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica Neue';
+}
+
+
+.headerWelcome {
+  box-sizing: border-box;
+
+  .banner {
+    position: relative;
+
+    .bannerContainer {
+      display: block;
+      position: relative;
+    }
+
+    h1 {
+      &::before {
+        content: "|";
+        margin-right: 1rem;
+      }
+
+      position: absolute;
+      font-family: Helvetica Neue;
+      font-size: 70px;
+      left: 30px;
+      bottom: 50px;
+      font-style: normal;
+      font-weight: bold;
+      line-height: 70px;
+      letter-spacing: -0.015em;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      display: flex;
+      align-items: center;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+
+  .breadCrum {
+    text-align: left;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.015em;
+    text-transform: uppercase;
+    margin-top: 20px;
+
+    a {
+      font-family: 'Helvetica Neue';
+      text-decoration: none;
+      text-transform: uppercase;
+      color: $ms-color-themePrimary;
+    }
+  }
+
+  .bannerImage {
+    display: block;
+
+    >img {
+      width: 100%;
+    }
+  }
+
+  .bannerAction {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    width: 150px;
+    margin: 20px;
+    display: flex;
+    padding: 0 10px;
+    border-radius: 100px;
+    justify-content: space-around;
+    align-items: center;
+
+    .actionText {
+      font-family: 'Helvetica Neue';
+      font-size: 10px;
+      color: #333;
+    }
+  }
+
+  .container {
+    // max-width: 1280px;
+    margin: 0px auto;
+    // box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .row {
+    box-sizing: border-box;
+    @include ms-Grid-row;
+    @include ms-fontColor-white;
+    // background-color: $ms-color-themeDark;
+    padding: 20px 20px 0 20px;
+  }
+
+  .column {
+    @include ms-Grid-col;
+    @include ms-lg10;
+    @include ms-xl8;
+    @include ms-xlPush2;
+    @include ms-lgPush1;
+  }
+
+  .section_welcome {
+    // max-width: 1280px;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem 0 0;
+
+    @media (max-width: 780px) {
+      .title {
+        font-family: 'Helvetica Neue';
+        font-size: 4vw !important;
+      }
+
+      .subTitle {
+        font-family: 'Helvetica Neue';
+        font-size: 5vw !important;
+      }
+    }
+
+    .title {
+      font-family: "Futura Std";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 2vw;
+      text-transform: uppercase;
+      color: #464646;
+
+      span {
+        font-weight: 900;
+      }
+    }
+
+    .subTitle {
+      font-family: "Futura Std";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 2.5vw;
+      text-transform: uppercase;
+      color: $ms-color-themePrimary;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      margin-left: 0;
+      > i {
+        margin-right: 1rem;
+        font-size: 0.5rem;
+        transition: all 700 ease;
+      }
+
+      &__selected {
+        > i {
+          transform: rotate(-90deg);
+        }
+      }
+      .iconMenu {
+        font-size: 23px;
+        margin-left: 10px; 
+        font-weight: 900; 
+        position: absolute; 
+        left: -2rem;
+        color: $ms-color-themePrimary;
+      }
+    }
+  }
+
+}

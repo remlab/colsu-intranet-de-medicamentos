@@ -1,0 +1,177 @@
+@import '~office-ui-fabric-react/dist/sass/References.scss';
+
+.footer {
+  .container {
+    max-width: 700px;
+    margin: 0px auto;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .row {
+    @include ms-Grid-row;
+    @include ms-fontColor-white;
+    background-color: $ms-color-themeDark;
+    padding: 20px;
+  }
+
+  .column {
+    @include ms-Grid-col;
+    @include ms-lg10;
+    @include ms-xl8;
+    @include ms-xlPush2;
+    @include ms-lgPush1;
+  }
+}
+
+.section_footer {
+  background: #00205C;
+
+  @media (max-width: 480px) {
+    &__footer1 {
+      text-align: center;
+
+      ul {
+        margin: 0;
+        padding: 0;
+      }
+
+      ul li {
+        width: 100%;
+
+        .footer1_brand {
+          max-width: 250px;
+          width: 100%;
+          margin: 0 auto;
+
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  &__footer1 {
+    ul {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+
+      li {
+        padding: 2em;
+        list-style: none;
+        flex: 1;
+
+        div {
+          color: white
+        }
+
+        .footer__links ul {
+          display: block;
+        }
+
+        .footer__links ul li {
+          padding: .5em;
+        }
+
+        .footer__links ul li a {
+          text-decoration: none;
+          color: white;
+          font-family: 'Futura Std';
+          font-size: 12px !important;
+          position: relative;
+          &:hover:before {
+            content: '';
+            width: 15px;
+            height: 23.4px;
+            background-image: url(https://colsubsidio365.sharepoint.com/sites/IntranetCorporativa/SiteAssets/images/polygon.png);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            position: absolute;
+            right: 105%;
+            bottom: 0;
+            -webkit-transform: scaleY(-1);
+            -moz-transform: scaleY(-1);
+            -o-transform: scaleY(-1);
+            -ms-transform: scaleY(-1);
+            transform: scaleY(-1);
+          }
+        }
+        
+        .footer__intranet {
+          text-align: center;
+        }
+
+        .footer__intranet img {
+          width: 86px;
+        }
+
+        .footer__poweredby img {
+          width: 40px;
+        }
+      }
+    }
+  }
+
+  &__footer2 {
+    padding: 0 3em;
+    background: #6D6D6D;
+    text-align: center;
+
+    img {
+      width: 90%;
+    }
+  }
+
+  &__footer3 {
+    background: white;
+
+    ul {
+      display: flex;
+      justify-content: space-around;
+      margin: 0 auto;
+      padding: 2.5em 0;
+      width: 60%;
+
+      li {
+        list-style: none;
+
+        a>img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  &__footer4 {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    padding: 1em 3em;
+    flex-wrap: wrap;
+
+    @media (max-width: 480px) {
+      text-align: center;
+    }
+
+    img {
+      margin-bottom: 1em
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+      font-family: 'Futura Std';
+      font-size: 12px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    img:nth-child(1) {
+      width: 120px !important;
+    }
+  }
+}

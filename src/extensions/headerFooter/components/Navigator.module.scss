@@ -1,0 +1,301 @@
+@import '~office-ui-fabric-react/dist/sass/References.scss';
+@import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('./assets/fonts/Helveltica_Neue/HelveticaNeue-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('./assets/fonts/Helveltica_Neue/HelveticaNeueBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Futura Std';
+  src: url('./assets/fonts/Futura_Std/FuturaStd-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Futura Std';
+  src: url('./assets/fonts/Futura_Std/FuturaStd-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Futura Std';
+  src: url('./assets/fonts/Futura_Std/FuturaStd-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6, p, p span, p strong {
+  font-family: 'Futura Std';
+}
+
+[data-sp-feature-tag="Suite Navigation Placeholder"]{
+  display: none !important;
+}
+
+[data-sp-feature-tag="Site header host"],
+[data-automation-id="pageHeader"] {
+  display: none !important;
+}
+
+div[class*='pageHeaderEdit'] {
+  display: block !important;
+}
+
+[data-automation-id="pageTitleInput"] {
+  background-color: yellow !important;
+}
+
+input[data-automation-id="pageTitleInput"] {
+  background-color: yellow !important;
+}
+
+.parallaxContainer_7887c9f5.backgroundImage_8671525a {
+  height: 450px !important; 
+}
+
+[class*="emphasisBackground"] {
+  background:initial !important;
+} 
+
+[class*="searchWp__noresult"] {
+    font-size: 12px;
+    position: absolute;
+    top: -65px;
+    right: 10px;
+    color: #a80000;
+    text-transform: uppercase;
+    font-weight: bold;
+} 
+
+[class*="feedback"] {
+    z-index: 99;
+} 
+
+[data-sp-feature-instance-id="_Comments"] {
+  display: none !important;
+}
+
+.flex_style {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.searchBox_d9acffe0 .searchFieldGroup_d9acffe0 .searchTextField_d9acffe0 {
+  box-shadow: 0 0 35px rgba(0,0,0,.08);
+}
+
+.section_header {
+
+  background: $ms-color-themePrimary;
+
+
+
+  .header {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 0;
+
+    @media (max-width: 480px) {
+      &__logo {
+        height: 40px !important;
+      }
+
+      &__nav {
+        display: none !important;
+      }
+    }
+
+    &__logo {
+      height: 70px;
+    }
+
+    &__nav {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-start;
+
+      li {
+        list-style: none;
+        margin: 0 1em;
+      }
+
+      a {
+        position: relative;
+        font-family: 'Futura Std';
+
+        &:before {
+          content: '';
+          width: 1px;
+          height: 15px;
+          background: white;
+          position: absolute;
+          left: 50%;
+          transition: all .4s ease-out;
+          opacity: 0;
+          bottom: 10%;
+        }
+
+        &:after {
+          content: '';
+          width: 1px;
+          height: 15px;
+          background: white;
+          position: absolute;
+          right: 50%;
+          transition: all .4s ease-out;
+          opacity: 0;
+          bottom: 10%;
+        }
+      }
+
+      a:hover {
+        &:before {
+          left: -10%;
+          opacity: 1;
+        }
+
+        &:after {
+          right: -10%;
+          opacity: 1;
+        }
+      }
+
+    }
+  }
+  .hamburguer {
+    display: none;
+    @media screen and (max-width: 720px) {
+      display: block;
+    }
+  }
+  .headerMobile {
+    display: none;
+    @media screen and (max-width: 768px) {
+      display: block;
+    }
+    ul.header__nav {
+      li{
+        display: block;
+      }
+    }
+  }
+}
+
+.app {
+  position: relative;
+  .top {
+    // height:60px;
+    // text-align:center;
+    // line-height:2.5;
+    // font-weight:bold;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    background-color: $ms-color-themePrimary;
+    color: $ms-color-white;
+
+  }
+
+  .bottom {
+    position: absolute;
+    height: 40px;
+    text-align: center;
+    line-height: 2.5;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $ms-color-themePrimary;
+    color: $ms-color-white;
+  }
+}
+
+.navigator {
+  .container {
+    max-width: 700px;
+    margin: 0px auto;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .row {
+    @include ms-Grid-row;
+    @include ms-fontColor-white;
+    background-color: $ms-color-themeDark;
+    padding: 20px;
+  }
+
+  .column {
+    @include ms-Grid-col;
+    @include ms-lg10;
+    @include ms-xl8;
+    @include ms-xlPush2;
+    @include ms-lgPush1;
+  }
+
+  .title {
+    @include ms-font-xl;
+    @include ms-fontColor-white;
+  }
+
+  .subTitle {
+    @include ms-font-l;
+    @include ms-fontColor-white;
+  }
+
+  .description {
+    @include ms-font-l;
+    @include ms-fontColor-white;
+  }
+
+  .button {
+    // Our button
+    text-decoration: none;
+    height: 32px;
+
+    // Primary Button
+    min-width: 80px;
+    background-color: $ms-color-themePrimary;
+    border-color: $ms-color-themePrimary;
+    color: $ms-color-white;
+
+    // Basic Button
+    outline: transparent;
+    position: relative;
+    font-family: 'Futura Std', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: $ms-font-size-m;
+    font-weight: $ms-font-weight-regular;
+    border-width: 0;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 16px;
+
+    .label {
+      font-weight: $ms-font-weight-semibold;
+      font-size: $ms-font-size-m;
+      height: 32px;
+      line-height: 32px;
+      margin: 0 4px;
+      vertical-align: top;
+      display: inline-block;
+    }
+  }
+}

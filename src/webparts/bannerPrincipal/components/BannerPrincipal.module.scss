@@ -1,0 +1,330 @@
+@import '~office-ui-fabric-react/dist/sass/References.scss';
+
+// * {
+//   box-sizing: border-box;
+//   font-family: "Helvetica Neue";
+//   font-style: normal;
+// }
+
+.placeholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #605e5c;
+  background-color: #f3f2f1;
+  width: 100%;
+  flex-direction: column;
+  padding: 80px 0;
+
+  &__icon {
+    font-size: 24px;
+    margin-right: 20px;
+  }
+
+  &__iconText {
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 30px;
+  }
+
+  &__description {
+    margin: 20px 0;
+  }
+}
+
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-family: 'Futura Std' !important;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.swiper_button_prev {
+    left: 10% !important;
+  }
+.swiper_button_next {
+    right: 10% !important;
+}
+
+.bannerSwipper {
+  overflow: visible;
+  
+  &__ButtonPrev {
+    right: 5% !important;
+    height: 56px !important;
+
+    background: url(http://aremlab.com/media/colsubsidio/institucional/header/nextButton.svg) no-repeat 100% !important;
+    &:after {
+      content: "" !important;
+    }
+  }
+
+  &__ButtonNext {
+    left: 5% !important;
+    height: 56px !important;
+    background: url(http://aremlab.com/media/colsubsidio/institucional/header/prevButton.svg) no-repeat 100% !important;
+    &:after {
+      content: "" !important;
+    }
+  }
+}
+
+.bannerPrincipal {
+  .container {
+    width: 100%;
+    position: relative;
+  }
+
+  &__header {
+    display: block;
+    width: 100%;
+
+    h2 {
+      color: rgba(0, 0, 0, 1);
+      font-family: 'Helvetica Neue';
+      font-size: 30px;
+      font-weight: lighter;
+      padding-left: 1em;
+      margin-top: 10px;
+
+      &:before {
+        content: '';
+        width: 40px;
+        height: 40px;
+        background-image: url(http://aremlab.com/media/colsubsidio/institucional/news/news_title_path.svg);
+        background-repeat: no-repeat;
+        position: absolute;
+        top: -10px;
+        left: 0;
+        // z-index: -1;
+      }
+
+      strong {
+        display: block;
+      }
+    }
+  }
+
+  button.nextButtonClassName,
+  button.prevButtonClassName {
+    background-color: rgba(255, 255, 255, 0) !important;
+    width: 25px;
+    height: 56px;
+    // right: 100px;
+    position: absolute;
+  }
+
+  .nextButtonClassName {
+    background-image: url(http://aremlab.com/media/colsubsidio/institucional/header/nextButton.svg) !important;
+    right: 25px;
+  }
+
+  button.prevButtonClassName {
+    background-image: url(http://aremlab.com/media/colsubsidio/institucional/header/prevButton.svg) !important;
+    left: 25px;
+  }
+
+  .carouselContent {
+    background-color: white;
+  }
+
+  .carouselButtonsContainer {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0);
+    z-index: 99
+  }
+
+  // BANNER STYLES
+
+  .section_dynamics {
+
+    &__banner {
+
+      &__description {
+        
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+        padding-left: 1rem;
+
+        &:before {
+          content: '';
+          position: absolute;
+          height: 100%;
+          width: 3px;
+          background: #DCE545;
+          left: 0;
+          top: 0;
+        }
+      }
+    }
+  }
+
+  .section_header {
+    height: auto;
+    position: relative;
+
+
+    &__banner {
+      // height: 50vw;
+      // max-height: 494px;
+
+      .banner__content {
+        width: 100%;
+        // height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          min-height: 100%;
+          max-width: 100%;
+          height: 100%;
+          width: 100%;
+        }
+
+        .nextButtonClassName {
+          background: red !important;
+        }
+      }
+
+    }
+
+    .controllerBanner {
+      display: flex;
+      justify-content: space-around;
+      position: absolute;
+      bottom: 20px;
+      position: absolute;
+      left: 3%;
+
+      .bannerAction {
+        background: #fff;
+        // width: 150px;
+        left: 20px;
+        display: flex;
+        padding: 0 10px;
+        // border-radius: 100px;
+        justify-content: space-around;
+        align-items: center;
+
+        .actionText {
+          font-size: 10px;
+          color: #333;
+        }
+      }
+    }
+
+
+    .bannerCard {
+      background: white;
+      bottom: -10%;
+      height: auto;
+      position: absolute;
+      right: 10%;
+      width: 350px;
+      padding: 2em;
+      box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.16);
+      border-radius: 10px;
+      z-index: 999;
+
+      @media (max-width: 1024px) {
+
+        .cardImageContainer,
+        p.cardBrief,
+        .cardSubTitle {
+          display: none !important;
+        }
+      }
+
+      @media (max-width: 425px) {
+        display: none !important;
+      }
+
+      .cardDate {
+        font-size: 12px;
+        line-height: 20px;
+        letter-spacing: 0.03em;
+        padding: 0 10px;
+      }
+
+      .cardTitle,
+      .cardSubTitle {
+        height: 25px;
+      }
+
+      .cardTitle p {
+        font-size: 23px;
+        line-height: 20px;
+        font-weight: bold;
+        letter-spacing: 0.03em;
+        margin-bottom: 0px;
+      }
+
+      .cardTitle {
+        min-height: 0px;
+      }
+
+      .cardSubTitle {
+        margin-bottom: 20px;
+      }
+
+      .cardSubTitle p {
+        font-size: 18px;
+        letter-spacing: 0.03em;
+        color: #000000;
+        margin-bottom: 0px;
+
+      }
+
+      .cardBrief p {
+        font-size: 14px;
+        letter-spacing: 0.03em;
+        color: #000000;
+      }
+
+      .cardImageContainer {
+        position: relative;
+
+        .cardImage {
+          // max-width: 350px;
+          padding: 0 10px;
+          max-height: 100px !important;
+          width: 100%;
+        }
+      }
+
+      .cardCta {
+        background-color: #25B0DC;
+        border: none;
+        border-radius: 4px;
+        color: white;
+        font-weight: bold;
+        // height: 50px;
+        // padding: 0 10px;
+        width: 100%;
+        text-transform: uppercase;
+        padding: 15px 10px;
+        display: block;
+        text-align: center;
+        // vertical-align: middle;
+        margin: 16px 0 0 0;
+        text-decoration: none;
+      }
+
+    }
+
+  }
+}

@@ -1,0 +1,163 @@
+.mediosPago {
+
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+
+  &__header {
+
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+
+    h2 {
+      font-family: Helvetica Neue;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 47px;
+      line-height: 66px;
+      text-align: center;
+      letter-spacing: -0.015em;
+      margin: 20px 0;
+      padding: 0;
+    }
+
+  }
+
+  &__content {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    // justify-content: space-between;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #CBCBCB;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+
+    &__paymentMethod {
+      font-family: 'Futura Std';
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 25%;
+      min-width: 250px;
+      position: relative;
+
+      &__titleLine {
+        font-family: 'Futura Std';
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &__asterisk {
+          font-family: Futura Std;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 21px;
+          line-height: 30px;
+          color: #A1265A;
+        }
+      }
+
+      &__title,
+      &__subtitle {
+        font-family: 'Helvetica Neue';
+        text-align: center;
+
+        p {
+          display: block;
+          margin: 0;
+          padding: 0;
+          text-align: center;
+          font-family: Futura Std;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          text-align: center;
+          letter-spacing: -0.015em;
+        }
+      }
+
+      &__Image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 157px;
+
+        &::before {
+          content: "";
+          display: block;
+          position: relative;
+          width: 142px;
+          height: 142px;
+          background: rgba(220, 229, 69, 0.6);
+          box-shadow: 0px 0px 64px rgba(0, 0, 0, 0.07);
+          border-radius: 150px;
+        }
+
+        img {
+          display: block;
+          position: relative;
+          border: 0;
+          margin-left: -25%;
+        }
+
+        &__0 {
+          &::before {
+            background: rgba(220, 229, 69, 0.6);
+          }
+        }
+
+        &__1 {
+          &::before {
+            background: #A9B5DD;
+          }
+        }
+
+        &__2 {
+          &::before {
+            background: rgba(242, 141, 19, 0.5);
+          }
+        }
+
+        &__3 {
+          &::before {
+            background: rgba(206, 49, 31, 0.5);
+          }
+        }
+      }
+
+    }
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+
+    &__footerText {
+      p {
+        margin: 0;
+        padding: 0;
+        font-family: 'Futura Std';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 58px;
+        letter-spacing: -0.015em;
+      }
+    }
+
+    &__asterisk {
+      color: #A1265A;
+      font-family: 'Futura Std';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 28px;
+      line-height: 58px;
+    }
+  }
+
+}

@@ -1,0 +1,56 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "e0325fbc-da80-4555-bc90-bf9296ffcbb1",
+  "alias": "HeaderWelcomeWebPart",
+  "componentType": "WebPart",
+
+  // The "*" signifies that the version should be taken from the package.json
+  "version": "*",
+  "manifestVersion": 2,
+
+  // If true, the component can only be installed on sites where Custom Script is allowed.
+  // Components that allow authors to embed arbitrary script code should set this to true.
+  // https://support.office.com/en-us/article/Turn-scripting-capabilities-on-or-off-1f2c515f-5d7e-448a-9fd7-835da935584f
+  "requiresCustomScript": false,
+  "supportsFullBleed": true,
+  "supportedHosts": ["SharePointWebPart"],
+
+  "preconfiguredEntries": [{
+    "groupId": "5c03119e-3074-46fd-976b-c60198311f70", // Other
+    "group": { "default": "Other" },
+    "title": { "default": "Header" },
+    "description": { "default": "Header para saludo con nombre de usuario actual, o interna de páginas. Intranet de Medicamentos Colsubsidio." },
+    "officeFabricIconFontName": "Page",
+    "properties": {
+      "title": "Canal Institucional",
+      "type": "saludo",
+      "hideTitle": false,
+      "titleColor": "#fff",
+      "items": [{
+        "title": "Canal Institucional",
+        "link": "https://colsubsidio365.sharepoint.com/sites/IntranetdeMedicamentos/canal-institucional"
+      },{
+        "title": "Canal Comercial",
+        "link": "https://colsubsidio365.sharepoint.com/sites/IntranetdeMedicamentos/canal-comercial"
+      },{
+        "title": "Experiencia de Usuario",
+        "link": "https://colsubsidio365.sharepoint.com/sites/IntranetdeMedicamentos/experiencia__de_usuario"
+      },{
+        "title": "Aseguramiento de Calidad",
+        "link": "https://colsubsidio365.sharepoint.com/sites/IntranetdeMedicamentos/aseguramiento_de_calidad"
+      },{
+        "title": "Gestión Humana",
+        "link": "https://colsubsidio365.sharepoint.com/sites/IntranetdeMedicamentos/gestion_humana"
+      },{
+        "title": "Claudia te cuenta",
+        "link": "https://colsubsidio365.sharepoint.com/sites/IntranetdeMedicamentos/claudia_te_cuenta"
+      },{
+        "title": "Servicios Gama",
+        "link": "https://colsubsidio365.sharepoint.com/sites/IntranetdeMedicamentos"
+      },{
+        "title": "Comunidad Medicamentos",
+        "link": "https://colsubsidio365.sharepoint.com/sites/IntranetdeMedicamentos"
+      }]
+    }
+  }]
+}

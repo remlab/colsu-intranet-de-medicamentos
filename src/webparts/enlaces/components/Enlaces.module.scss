@@ -1,0 +1,65 @@
+@import '~office-ui-fabric-react/dist/sass/References.scss';
+@import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
+
+$color-bg-sharepoint : #f3f2f1;
+
+.links {
+  background: #f2f2f2 !important;
+
+  .row {
+    @include ms-Grid-row;
+    @include ms-fontColor-white;
+    background-color: $ms-color-themeDark;
+    padding: 20px;
+  }
+
+  .column {
+    @include ms-Grid-col;
+    @include ms-lg10;
+    @include ms-xl8;
+    @include ms-xlPush2;
+    @include ms-lgPush1;
+  }
+
+  &__card {
+    ul li {
+      list-style: none;
+      margin: 1rem 0;
+    }
+    a {
+      text-decoration: none;
+      border: solid 1px #EBEBEB;
+      border-radius: 4px;
+      font-family: Helvetica Neue;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 23px;
+      color: #000000;
+      padding: 1.5rem;
+      padding-left: 3rem;
+      position: relative;
+      display: block;
+      transition: all .5s;
+      
+      &:hover {
+        background-color: $ms-color-themePrimary;
+        color: $color-bg-sharepoint;
+        &:before {
+          background-color: $color-bg-sharepoint;
+          color: $color-bg-sharepoint;
+        }
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        border-radius: 100px;
+        width: 15px;
+        height: 15px;
+        background: $ms-color-themePrimary;
+        left: 10px;
+        transition: all .5s;
+      }
+    }
+  }
+}

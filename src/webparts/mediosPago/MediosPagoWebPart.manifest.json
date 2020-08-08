@@ -1,0 +1,55 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "b2012275-124c-48e1-8908-8802803b8c93",
+  "alias": "MediosPagoWebPart",
+  "componentType": "WebPart",
+
+  // The "*" signifies that the version should be taken from the package.json
+  "version": "*",
+  "manifestVersion": 2,
+
+  // If true, the component can only be installed on sites where Custom Script is allowed.
+  // Components that allow authors to embed arbitrary script code should set this to true.
+  // https://support.office.com/en-us/article/Turn-scripting-capabilities-on-or-off-1f2c515f-5d7e-448a-9fd7-835da935584f
+  "requiresCustomScript": false,
+  "supportsFullBleed": true,
+  "supportedHosts": ["SharePointWebPart"],
+
+  "preconfiguredEntries": [{
+    "groupId": "5c03119e-3074-46fd-976b-c60198311f70", // Other
+    "group": { "default": "Other" },
+    "title": { "default": "Medios Pago" },
+    "description": { "default": "Medios de pago Colsubsidio." },
+    "officeFabricIconFontName": "Page",
+    "properties": {
+      "title": "Medios de",
+      "subtitle": "Pago",
+      "paymentMethods": [{
+        "title": "<p>Tarjeta <strong>Multiservicios</strong></p>",
+        "subtitle": null,
+        "image": "https://colsubsidio365.sharepoint.com/sites/IntranetdeMedicamentos/canal-comercial/SiteAssets/mediospago/colsubsidio.png",
+        "applyAttention": false,
+        "link": "http://www.google.com"
+      },{
+        "title": "<p>Sodexo</p>",
+        "subtitle": null,
+        "image": "https://colsubsidio365.sharepoint.com/sites/IntranetdeMedicamentos/canal-comercial/SiteAssets/mediospago/sodexo.png",
+        "applyAttention": true,
+        "link": "http://www.google.com"
+      },{
+        "title": "<p>Tarjeta <strong>Alkosto</strong></p>",
+        "subtitle": null,
+        "image": "https://colsubsidio365.sharepoint.com/sites/IntranetdeMedicamentos/canal-comercial/SiteAssets/mediospago/alkosto.png",
+        "applyAttention": true,
+        "link": "http://www.google.com"
+      },{
+        "title": "<p>Corresponsal <strong>Bancario</strong></p>",
+        "subtitle": "<p>Banco de <strong>Bogotá</strong></p><p>Banco <strong>AV VILLAS</strong></p>",
+        "image": "https://colsubsidio365.sharepoint.com/sites/IntranetdeMedicamentos/canal-comercial/SiteAssets/mediospago/tarjeta-cards.png",
+        "applyAttention": true,
+        "link": "http://www.google.com"
+      }],
+      "footerText": "<p><strong>No aplica</strong> para Droguerias Dependientes</p>"
+    }
+  }]
+}

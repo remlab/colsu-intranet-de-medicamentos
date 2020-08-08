@@ -1,0 +1,52 @@
+@import '~office-ui-fabric-react/dist/sass/References.scss';
+
+.explorarAreas {
+  display: block;
+  position: relative;
+
+  &__link {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    height: 115px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    text-decoration: none;
+    border-radius: 7px;
+
+    &__container {
+      padding: 1rem 1rem 1rem 0;
+    }
+  }
+
+  &__text {
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 2rem;
+    letter-spacing: -0.015em;
+    padding-right: 1rem;
+    width: 40%;
+    color: #000000;
+    @media screen and  (max-width: 768px) {
+      font-size: 12px;
+    }
+    @media screen and  (max-width: 425px) {
+      font-size: 23px;
+    }
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #25B0DC;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    > svg {
+      width: 50%;
+    }
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "id": "f8251007-389b-4781-a477-1bd86658b3ef",
+  "alias": "CanalesDomicilioWebPart",
+  "componentType": "WebPart",
+  "version": "0.0.1",
+  "manifestVersion": 2,
+  "requiresCustomScript": false,
+  "supportsFullBleed": true,
+  "supportedHosts": [
+    "SharePointWebPart"
+  ],
+  "preconfiguredEntries": [
+    {
+      "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+      "group": {
+        "default": "Other"
+      },
+      "title": {
+        "default": "Canales Domicilio"
+      },
+      "description": {
+        "default": "Canales de domicilio Colsubsidio."
+      },
+      "officeFabricIconFontName": "Page",
+      "properties": {
+        "title": "Canales de",
+        "subtitle": "Domicilios",
+        "phone": "(+57) 700 6060 - (301) 322 4543",
+        "whatsapp": "(312) 700 1212 - (311) 700 1313",
+        "website": "www.colsubsidio.com"
+      }
+    }
+  ],
+  "loaderConfig": {
+    "entryModuleId": "canales-domicilio-web-part",
+    "internalModuleBaseUrls": [
+      "https://localhost:4321/"
+    ],
+    "scriptResources": {
+      "canales-domicilio-web-part": {
+        "type": "path",
+        "path": "dist/canales-domicilio-web-part.js"
+      },
+      "@microsoft/sp-property-pane": {
+        "type": "component",
+        "version": "1.10.0",
+        "id": "f9e737b7-f0df-4597-ba8c-3060f82380db"
+      },
+      "@microsoft/sp-core-library": {
+        "type": "component",
+        "version": "1.1.0",
+        "id": "7263c7d0-1d6a-45ec-8d85-d4d1d234171b"
+      },
+      "@microsoft/sp-webpart-base": {
+        "type": "component",
+        "version": "1.10.0",
+        "id": "974a7777-0990-4136-8fa6-95d80114c2e0"
+      },
+      "react": {
+        "type": "component",
+        "version": "16.8.5",
+        "id": "0d910c1c-13b9-4e1c-9aa4-b008c5e42d7d",
+        "failoverPath": "node_modules/react/dist/react.js"
+      },
+      "react-dom": {
+        "type": "component",
+        "version": "16.8.5",
+        "id": "aa0a46ec-1505-43cd-a44a-93f3a5aa460a",
+        "failoverPath": "node_modules/react-dom/dist/react-dom.js"
+      }
+    }
+  }
+}

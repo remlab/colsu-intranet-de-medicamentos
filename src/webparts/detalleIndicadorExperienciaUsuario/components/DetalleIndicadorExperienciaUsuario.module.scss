@@ -1,0 +1,148 @@
+@import '~office-ui-fabric-react/dist/sass/References.scss';
+
+h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+}
+
+.detalleIndicadorExperienciaUsuario {
+
+  &__indicador {
+
+    &__image {
+      width: 100%;
+    }
+
+    &__filepicker {
+      background: #fff;
+      width: 150px;
+      left: 20px;
+      display: flex;
+      padding: 0 10px;
+      border-radius: 100px;
+      justify-content: space-around;
+      align-items: center;
+    }
+  }
+}
+
+
+.experience_detail {
+
+  .card {
+      padding: 2rem 1rem;
+      margin: 1rem 0;
+      text-align: center;
+      svg {
+        // background: rgba(37, 176, 220, 0.2);
+        border-radius: 100px;
+        width: 90px;
+        height: 90px;
+        text-align: center;
+        font-size: 120px;
+        padding: 1rem;
+        color: #25B0DC;
+        margin: 1rem 0;
+      }
+      &_experience_detail__value {
+        font-family: 'Futura Std';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        color: #000000;
+        margin: 1rem 0;
+      }
+      &_experience_detail__title {
+        font-family: 'Futura Std';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        color: #000000;
+        margin: 1rem 0;
+      }
+  }
+  .breadCrum {
+    text-align: center;
+
+     a  {
+        font-family: 'Futura Std';
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #368090;
+     }
+  }
+}
+
+.experience_detail__channels {
+    margin-bottom: 3rem;
+    
+  .cardExperience {
+      padding: 1rem 1rem;
+      margin: 1rem 0;
+      text-align: left;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: start;
+      align-items: top;
+      position: relative;
+      background: #FFFFFF;
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      @media screen and (max-width: 768px){
+        justify-content: center;
+
+        svg { margin-right: 0 !important; }
+      }
+      svg {
+        // background: rgba(37, 176, 220, 0.2);
+        // border-radius: 100px;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        font-size: 120px;
+        padding: 1rem;
+        color: #25B0DC;
+        margin: 1rem 0;
+        margin-right: 2rem;
+      }
+      h4 {
+        font-family: Helvetica Neue;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        color: #000000;
+        margin: 1rem 0;
+      }
+      &_experience_detail__title {
+        font-family: 'Futura Std';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        color: #000000;
+        margin: 1rem 0;
+      }
+      a.channels_button {
+          position: absolute;
+          bottom: 1rem;
+          right: 1rem;
+          font-family: 'Futura Std';
+
+          i {
+              background-color: #368090;
+              padding: .5rem;
+              border-radius: 100px;
+              color: white;
+          }
+      }
+  }
+}
+
+.blue_color{ background-color : #25B0DC !important; }
+.pink_color{ background-color : #D51A67 !important; }
+.green_color{ background-color : #8FC05D !important; }
+
+.blue_color_o{ color: #25B0DC !important; background: rgba(37, 176, 220, 0.2) !important; }
+.pink_color_o{ color : #D51A67 !important; background: rgba(213, 26, 103, 0.2) !important; }
+.green_color_o{ color : #8FC05D !important; background: rgba(143, 192, 93, 0.2) !important; }
+.yellow_color_o{ color : #EFD53D !important; background: rgba(239, 213, 61, 0.2) !important; }
+.purple_color_o{ color : #071D66 !important; background: rgba(7, 29, 102, 0.1) !important; }

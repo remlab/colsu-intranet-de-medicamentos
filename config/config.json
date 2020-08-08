@@ -1,0 +1,239 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "banner-principal-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/bannerPrincipal/BannerPrincipalWebPart.js",
+          "manifest": "./src/webparts/bannerPrincipal/BannerPrincipalWebPart.manifest.json"
+        }
+      ]
+    },
+    "convenios-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/convenios/ConveniosWebPart.js",
+          "manifest": "./src/webparts/convenios/ConveniosWebPart.manifest.json"
+        }
+      ]
+    },
+    "indicadores-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/indicadores/IndicadoresWebPart.js",
+          "manifest": "./src/webparts/indicadores/IndicadoresWebPart.manifest.json"
+        }
+      ]
+    },
+    "organigrama-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/organigrama/OrganigramaWebPart.js",
+          "manifest": "./src/webparts/organigrama/OrganigramaWebPart.manifest.json"
+        }
+      ]
+    },
+    "noticias-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/noticias/NoticiasWebPart.js",
+          "manifest": "./src/webparts/noticias/NoticiasWebPart.manifest.json"
+        }
+      ]
+    },
+    "forms-section-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/formsSection/FormsSectionWebPart.js",
+          "manifest": "./src/webparts/formsSection/FormsSectionWebPart.manifest.json"
+        }
+      ]
+    },
+    "noticias-destacado-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/noticiasDestacado/NoticiasDestacadoWebPart.js",
+          "manifest": "./src/webparts/noticiasDestacado/NoticiasDestacadoWebPart.manifest.json"
+        }
+      ]
+    },
+    "header-welcome-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/headerWelcome/HeaderWelcomeWebPart.js",
+          "manifest": "./src/webparts/headerWelcome/HeaderWelcomeWebPart.manifest.json"
+        }
+      ]
+    },
+    "search-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/search/SearchWebPart.js",
+          "manifest": "./src/webparts/search/SearchWebPart.manifest.json"
+        }
+      ]
+    },
+    "documentos-convenio-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/documentosConvenio/DocumentosConvenioWebPart.js",
+          "manifest": "./src/webparts/documentosConvenio/DocumentosConvenioWebPart.manifest.json"
+        }
+      ]
+    },
+    "header-footer-application-customizer": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/headerFooter/HeaderFooterApplicationCustomizer.js",
+          "manifest": "./src/extensions/headerFooter/HeaderFooterApplicationCustomizer.manifest.json"
+        }
+      ]
+    },
+    "footer-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/footer/FooterWebPart.js",
+          "manifest": "./src/webparts/footer/FooterWebPart.manifest.json"
+        }
+      ]
+    },
+    "nodos-domicilio-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/nodosDomicilio/NodosDomicilioWebPart.js",
+          "manifest": "./src/webparts/nodosDomicilio/NodosDomicilioWebPart.manifest.json"
+        }
+      ]
+    },
+    "canales-domicilio-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/canalesDomicilio/CanalesDomicilioWebPart.js",
+          "manifest": "./src/webparts/canalesDomicilio/CanalesDomicilioWebPart.manifest.json"
+        }
+      ]
+    },
+    "medios-pago-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/mediosPago/MediosPagoWebPart.js",
+          "manifest": "./src/webparts/mediosPago/MediosPagoWebPart.manifest.json"
+        }
+      ]
+    },
+    "nuestra-cultura-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/nuestraCultura/NuestraCulturaWebPart.js",
+          "manifest": "./src/webparts/nuestraCultura/NuestraCulturaWebPart.manifest.json"
+        }
+      ]
+    },
+    "cumpleanos-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/cumpleanos/CumpleanosWebPart.js",
+          "manifest": "./src/webparts/cumpleanos/CumpleanosWebPart.manifest.json"
+        }
+      ]
+    },
+    "convocatorias-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/convocatorias/ConvocatoriasWebPart.js",
+          "manifest": "./src/webparts/convocatorias/ConvocatoriasWebPart.manifest.json"
+        }
+      ]
+    },
+    "disciplina-organizacional-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/disciplinaOrganizacional/DisciplinaOrganizacionalWebPart.js",
+          "manifest": "./src/webparts/disciplinaOrganizacional/DisciplinaOrganizacionalWebPart.manifest.json"
+        }
+      ]
+    },
+    "enlaces-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/enlaces/EnlacesWebPart.js",
+          "manifest": "./src/webparts/enlaces/EnlacesWebPart.manifest.json"
+        }
+      ]
+    },
+    "cadena-valor-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/cadenaValor/CadenaValorWebPart.js",
+          "manifest": "./src/webparts/cadenaValor/CadenaValorWebPart.manifest.json"
+        }
+      ]
+    },
+    "quinquenios-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/quinquenios/QuinqueniosWebPart.js",
+          "manifest": "./src/webparts/quinquenios/QuinqueniosWebPart.manifest.json"
+        }
+      ]
+    },
+    "indicadores-experiencia-usuario-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/indicadoresExperienciaUsuario/IndicadoresExperienciaUsuarioWebPart.js",
+          "manifest": "./src/webparts/indicadoresExperienciaUsuario/IndicadoresExperienciaUsuarioWebPart.manifest.json"
+        }
+      ]
+    },
+    "detalle-indicador-experiencia-usuario-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/detalleIndicadorExperienciaUsuario/DetalleIndicadorExperienciaUsuarioWebPart.js",
+          "manifest": "./src/webparts/detalleIndicadorExperienciaUsuario/DetalleIndicadorExperienciaUsuarioWebPart.manifest.json"
+        }
+      ]
+    },
+    "explorar-areas-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/explorarAreas/ExplorarAreasWebPart.js",
+          "manifest": "./src/webparts/explorarAreas/ExplorarAreasWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {
+    "sp-client-custom-fields": "node_modules/sp-client-custom-fields/dist/sp-client-custom-fields.bundle.js"
+  },
+  "localizedResources": {
+    "sp-client-custom-fields/strings": "./node_modules/sp-client-custom-fields/lib/loc/{locale}.js",
+    "PropertyControlStrings": "node_modules/@pnp/spfx-property-controls/lib/loc/{locale}.js",
+    "ControlStrings": "node_modules/@pnp/spfx-controls-react/lib/loc/{locale}.js",
+    "BannerPrincipalWebPartStrings": "lib/webparts/bannerPrincipal/loc/{locale}.js",
+    "ConveniosWebPartStrings": "lib/webparts/convenios/loc/{locale}.js",
+    "IndicadoresWebPartStrings": "lib/webparts/indicadores/loc/{locale}.js",
+    "OrganigramaWebPartStrings": "lib/webparts/organigrama/loc/{locale}.js",
+    "NoticiasWebPartStrings": "lib/webparts/noticias/loc/{locale}.js",
+    "FormsSectionWebPartStrings": "lib/webparts/formsSection/loc/{locale}.js",
+    "NoticiasDestacadoWebPartStrings": "lib/webparts/noticiasDestacado/loc/{locale}.js",
+    "HeaderWelcomeWebPartStrings": "lib/webparts/headerWelcome/loc/{locale}.js",
+    "SearchWebPartStrings": "lib/webparts/search/loc/{locale}.js",
+    "DocumentosConvenioWebPartStrings": "lib/webparts/documentosConvenio/loc/{locale}.js",
+    "HeaderFooterApplicationCustomizerStrings": "lib/extensions/headerFooter/loc/{locale}.js",
+    "FooterWebPartStrings": "lib/webparts/footer/loc/{locale}.js",
+    "NodosDomicilioWebPartStrings": "lib/webparts/nodosDomicilio/loc/{locale}.js",
+    "CanalesDomicilioWebPartStrings": "lib/webparts/canalesDomicilio/loc/{locale}.js",
+    "MediosPagoWebPartStrings": "lib/webparts/mediosPago/loc/{locale}.js",
+    "NuestraCulturaWebPartStrings": "lib/webparts/nuestraCultura/loc/{locale}.js",
+    "CumpleanosWebPartStrings": "lib/webparts/cumpleanos/loc/{locale}.js",
+    "ConvocatoriasWebPartStrings": "lib/webparts/convocatorias/loc/{locale}.js",
+    "DisciplinaOrganizacionalWebPartStrings": "lib/webparts/disciplinaOrganizacional/loc/{locale}.js",
+    "EnlacesWebPartStrings": "lib/webparts/enlaces/loc/{locale}.js",
+    "CadenaValorWebPartStrings": "lib/webparts/cadenaValor/loc/{locale}.js",
+    "QuinqueniosWebPartStrings": "lib/webparts/quinquenios/loc/{locale}.js",
+    "IndicadoresExperienciaUsuarioWebPartStrings": "lib/webparts/indicadoresExperienciaUsuario/loc/{locale}.js",
+    "DetalleIndicadorExperienciaUsuarioWebPartStrings": "lib/webparts/detalleIndicadorExperienciaUsuario/loc/{locale}.js",
+    "ExplorarAreasWebPartStrings": "lib/webparts/explorarAreas/loc/{locale}.js"
+  }
+}

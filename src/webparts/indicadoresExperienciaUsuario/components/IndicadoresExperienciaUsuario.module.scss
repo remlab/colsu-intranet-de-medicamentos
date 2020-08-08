@@ -1,0 +1,123 @@
+@import '~office-ui-fabric-react/dist/sass/References.scss';
+
+// .indicadoresExperienciaUsuario {
+//   .container {
+//     max-width: 700px;
+//     margin: 0px auto;
+//     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+//   }
+
+//   .row {
+//     @include ms-Grid-row;
+//     @include ms-fontColor-white;
+//     background-color: $ms-color-themeDark;
+//     padding: 20px;
+//   }
+
+//   .column {
+//     @include ms-Grid-col;
+//     @include ms-lg10;
+//     @include ms-xl8;
+//     @include ms-xlPush2;
+//     @include ms-lgPush1;
+//   }
+// }
+
+.flex_style {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.experience {
+  .card {
+    padding: 3rem 2rem;
+    margin: 2rem 0;
+
+    &_experience__title {
+      font-family: Helvetica Neue;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 37px;
+      text-align: center;
+      color: #000000;
+    }
+
+    &_experience__indicator {
+      background-color: #25B0DC;
+      border-radius: 100px;
+      font-family: Helvetica Neue;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 23px;
+      line-height: 37px;
+      text-align: center;
+      width: 100px;
+      height: 100px;
+      color: white;
+      margin: 0 auto;
+      line-height: 100px;
+    }
+
+    &_experience__polls {
+      border-top: 1px solid #E1E1E1;
+      border-bottom: 1px solid #E1E1E1;
+      padding: 2rem 0;
+      margin: 2rem 0;
+
+      i {
+        background: rgba(37, 176, 220, 0.2);
+        border-radius: 100px;
+        width: 50px;
+        // height: 50px;
+        text-align: center;
+        font-size: 20px;
+        padding: 1rem;
+        color: #fff;
+      }
+
+      .poll_content {
+        padding-left: 10px;
+
+        &__title {
+          font-family: 'Futura Std' !important;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 12px;
+          color: #B7B7B7;
+
+          strong {
+            font-family: 'Futura Std' !important;
+            color: #000000;
+            font-size: 11px;
+          }
+        }
+
+        &__value {
+          font-family: Helvetica Neue;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 18px;
+          color: #404040;
+
+        }
+      }
+    }
+
+    &_experience__button {
+      border: 1px solid #E1E1E1;
+      box-sizing: border-box;
+      border-radius: 4px;
+      display: block;
+      font-family: Helvetica Neue;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      color: #404040;
+      text-align: center;
+      padding: 1rem 0;
+      text-decoration: none;
+    }
+  }
+}

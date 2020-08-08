@@ -1,0 +1,1 @@
+{"version":3,"file":"INewsState.d.ts","sourceRoot":"","sources":["../../../../src/webparts/noticias/components/INewsState.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,iBAAiB,EAAE,MAAM,yCAAyC,CAAC;AAE5E,UAAU,UAAU;IAClB,SAAS,EAAE,MAAM,CAAC;IAClB,YAAY,EAAE,MAAM,CAAC;IACrB,SAAS,EAAE,MAAM,CAAC;IAClB,SAAS,EAAE,iBAAiB,CAAC;CAC9B;AAED,MAAM,WAAW,UAAU;IACzB,MAAM,EAAE,UAAU,EAAE,CAAC;CACtB"}

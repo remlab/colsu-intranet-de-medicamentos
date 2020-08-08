@@ -1,0 +1,38 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "829431f8-a6ff-4be4-9c54-72bcbc158670",
+  "alias": "QuinqueniosWebPart",
+  "componentType": "WebPart",
+  "version": "*",
+  "manifestVersion": 2,
+  "requiresCustomScript": false,
+  "supportsFullBleed": true,
+  "supportedHosts": [
+    "SharePointWebPart"
+  ],
+  "preconfiguredEntries": [
+    {
+      "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+      "group": {
+        "default": "Other"
+      },
+      "title": {
+        "default": "Quinquenios"
+      },
+      "description": {
+        "default": "Quinquenios intranet de medicamentos Colsubsidio."
+      },
+      "officeFabricIconFontName": "Page",
+      "properties": {
+        "title": "Quinquenios",
+        "subtitle": "",
+        "text1": "<h2>Estamos agradecidos por habernos acompañado todos estos años.</h2>",
+        "text2": "<p>Queremos dar un reconocimiento, prem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel libero ut magna venenatis eleifend. Duis lorem ex, finibus ut commodo sit amet, condimentum id purus. Curabitur eleifend rhoncus orci, tristique maximus neque rutrum semper. Duis rhoncus luctus placerat. Vivamus et faucibus ipsum. Etiam</p>",
+        "sign": {
+          "image": "http://aremlab.com/media/colsubsidio/gestion/quinquenios/sign.png",
+          "text": "<p>GERENTE DE RECURSOS HUMANOS</p><p><strong>CAROLINA PONCE</strong></p>"
+        }
+      }
+    }
+  ]
+}

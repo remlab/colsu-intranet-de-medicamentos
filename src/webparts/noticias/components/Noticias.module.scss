@@ -1,0 +1,376 @@
+@import '~office-ui-fabric-react/dist/sass/References.scss';
+
+// * {
+//   box-sizing: border-box;
+//   font-family: "Helvetica Neue";
+//   font-style: normal;
+// }
+
+
+.bannerSwipper {
+  display: block;
+  width: 100%;
+  max-width: 780px;
+  overflow: hidden;
+  padding: 3rem;
+  position: relative;
+
+  &__ButtonPrev {
+    background-color: $ms-color-themePrimary !important;
+    border-radius: 100px;
+    width: 50px !important;
+    height: 50px !important;
+    position: absolute;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+
+    &:after {
+      content: "" !important;
+      display: block;
+      background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iNTYiIHZpZXdCb3g9IjAgMCAyNSA1NiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIuODYzOTZlLTA3IDUyLjcyNEw0LjMwNDY0IDU2TDI1IDI4TDQuMzA0NjQgLTEuODA5MjVlLTA2TDQuNjA5MjhlLTA2IDMuMjc1OTlMMTguMjc0IDI4TDIuODYzOTZlLTA3IDUyLjcyNFoiIGZpbGw9IndoaXRlIiBmaWxsLW9wYWNpdHk9IjAuOCIvPgo8L3N2Zz4K");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      width: 50%;
+      height: 50%;
+      position: absolute;
+    }
+  }
+  
+  &__ButtonNext {
+    background-color: $ms-color-themePrimary !important;
+    border-radius: 100px;
+    width: 50px !important;
+    height: 50px !important;
+    position: absolute;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    
+    &:after {
+      content: "" !important;
+      display: block;
+      background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iNTYiIHZpZXdCb3g9IjAgMCAyNSA1NiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTI1IDMuMjc1OTlMMjAuNjk1NCAwTDAgMjhMMjAuNjk1NCA1NkwyNSA1Mi43MjRMNi43MjYgMjhMMjUgMy4yNzU5OVoiIGZpbGw9IndoaXRlIiBmaWxsLW9wYWNpdHk9IjAuOCIvPgo8L3N2Zz4K");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      width: 50%;
+      height: 50%;
+      position: absolute;
+    }
+  }
+}
+
+.noticias {
+  .container {
+    // max-width: 1280px;
+    width: 100%;
+    margin: 0px auto;
+    // box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .row {
+    @include ms-Grid-row;
+    @include ms-fontColor-white;
+    // background-color: $ms-color-thremeDark;
+    padding: 20px;
+  }
+
+  .column {
+    @include ms-Grid-col;
+    @include ms-lg10;
+    @include ms-xl8;
+    @include ms-xlPush2;
+    @include ms-lgPush1;
+  }
+
+  .title {
+    @include ms-font-xl;
+    @include ms-fontColor-white;
+    font-family: 'Futura Std';
+  }
+
+  .subTitle {
+    @include ms-font-l;
+    @include ms-fontColor-white;
+    font-family: 'Futura Std';
+  }
+
+  .description {
+    @include ms-font-l;
+    @include ms-fontColor-white;
+    font-family: 'Futura Std';
+  }
+
+  //  ---------------------------------------- NEWS -------------------------------------
+
+  .section_news {
+    margin: 0 auto;
+    // max-width: 1280px;
+    width: 100%;
+    @media (max-width: 480px) {
+      .contentText { width: 100%; }
+    }
+    
+    .titleSection_featured {
+      max-width: 550px;
+      width: 100%;
+      position: relative;
+      margin: 5rem auto 0;
+      h2 {
+        padding-left: 1rem;
+        color: rgba(0, 0, 0, 1);
+        font-family: Helvetica Neue;
+        font-size: 30px;
+        font-weight: lighter;
+        text-transform: uppercase;
+        &:before {
+          content: '';
+          width: 40px;
+          height: 40px;
+          background-image: url(http://aremlab.com/media/colsubsidio/institucional/news/news_title_path.svg);
+          background-repeat: no-repeat;
+          position: absolute;
+          top: -10px;
+          left: 0;
+          z-index: 1;
+        }
+      }
+    }
+
+    .subTitle {
+      font-family: 'Futura Std' !important;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 23px;
+      letter-spacing: -0.015rem;
+      color: #000000;
+    }
+    .contentText {
+      font-family: 'Futura Std' !important;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      letter-spacing: -0.015rem;
+      color: #3a3a3a;
+      width: 70%;
+    }
+    .secondaryButton {
+      border: solid 1px #071D66;
+      border-radius: 6px;
+      color: #071D66;
+      padding: 1rem 3rem;
+      font-family: 'Futura Std';
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12px;
+      align-itrems: center;
+      margin-top: 1rem;
+      text-align: center;
+      transition: all .5s;
+      width: 50%;
+      cursor:pointer;
+      background: #fff;
+      text-transform: uppercase;
+      &:hover {
+        border: solid 1px #071D66;
+        background: #071D66;
+        color: #FFFFFF;
+        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+      }
+    }
+    &__featured {
+      // margin: 3rem 0;
+      padding: 3rem 0;
+      position: relative;
+      // display: flex;
+      // justify-content: flex-end;
+      // overflow: hidden;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      align-items: center;
+      align-content: center;
+      flex-grow: 0;
+      flex-shrink: 1;
+      // @media (max-width: 800px){
+      //   flex-basis: calc(1280px / 1);
+      //   max-width: calc(1280px / 1);
+      //   flex-direction: column;
+      //   flex-direction: column-reverse;
+      // }
+
+      &__content {
+        font-family: 'Futura Std';
+        padding: 3rem;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 64px rgba(0, 0, 0, 0.05);
+        border-radius: 10px;
+        height: 400px;
+        padding-left: 350px; 
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        @media (max-width: 800px){
+          padding-left: 0; 
+          width: 100%;
+          padding: 1rem;
+        }
+      }
+      &__image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        margin-top: auto;
+        margin-bottom: auto;
+        width: 550px;
+        height: 300px;
+        left: 50px;
+        @media (max-width: 800px){
+          position: relative;
+          width: 100%;
+          left: 0;
+          height: auto;
+        }
+        img {
+          width: 100%;
+        }
+      }
+    }
+    &__newsCarousel {
+      display: flex;
+      justify-content: flex-start;
+      margin-bottom: 3rem;
+      padding: 0;
+      @media (max-width: 800px) {
+        flex-wrap: wrap;
+        .titleSection {
+          // background: red;
+          font-family: 'Futura Std';
+          width: 100%;
+        }
+      }
+      
+      .titleSection {
+        width: 300px;
+        margin-right: 25px;
+        position: relative;
+        font-family: 'Helvetica Neue';
+        h2 {
+          padding-left: 2rem;
+          color: rgba(0, 0, 0, 1);
+          font-family: Helvetica Neue;
+          font-size: 33px;
+          font-weight: lighter;
+          &:before {
+            content: '';
+            width: 40px;
+            height: 40px;
+            background-image: url(http://aremlab.com/media/colsubsidio/institucional/news/news_title_path.svg);
+            background-repeat: no-repeat;
+            position: absolute;
+            top: -10px;
+            left: 0;
+            z-index: 1;
+          }
+          strong {
+            display: block;
+            font-family: 'Helvetica Neue';
+          }
+        }
+      }
+      // .conveniosCardContainer .slider-frame {
+      .conveniosCardContainer {
+        padding: 0 1rem 5rem 1rem !important;
+      }
+      // @media (max-width: 500px) {
+      //   .conveniosCardContainer .slider-frame .slider-list .slider-slide.slide-visible {
+      //     max-width: 414px;
+      //     width: 100% !important;
+      //   }
+      // }
+      .news {
+        background: #FFFFFF;
+        box-shadow: 0px 0px 34px rgba(0, 0, 0, 0.1) !important;
+        border-radius: 4px;
+        // max-width: 300px;
+        // width: 100%;
+        // height: 550px;
+        // margin: 25px auto;
+        // margin-left: 25px;
+        // padding: .3rem;
+        
+        a {
+            color: #162B70;
+            border: solid 1px #162B70;
+            background-color: #ffffff;
+            box-sizing: border-box;
+            border-radius: 4px;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            font-family: 'Futura Std';
+            font-size: 11px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        a:hover {
+          transition: all .7s;
+          color: #ffffff;
+          border:solid 1px #162B70;
+          background-color: #162B70;
+        }
+        img {
+          // max-width: 300px;
+          width: 100%;
+        }
+        &_content {
+            font-family: 'Futura Std';
+            box-sizing: border-box;
+            padding: 2rem;
+        }
+        &__title {
+            font-family: 'Futura Std';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: -0.015rem;
+            margin: 0;
+            padding: 0;
+
+            color: #000000;
+        }
+        &__description {
+          font-family: 'Futura Std';
+          font-style: normal;
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 20px;
+          letter-spacing: -0.015rem;
+          color: #666666;
+          margin-bottom: 3rem;
+        }
+      }
+    }
+    .nextButtonClassName, .prevButtonClassName {
+      background: rgba(255, 255, 255, 0) !important ;
+      width: 75px;
+      height: 75px;
+      // right: 100px;
+      position: absolute;
+      background-size: cover !important;
+      background-position: 0 0;
+      @media (max-width: 480px) {
+        display: none;
+      }
+    }
+    .nextButtonClassName {
+      background-image: url(http://aremlab.com/media/colsubsidio/institucional/news/nextButtonsvg.svg) !important;
+      right: 0px;
+    }
+    .prevButtonClassName {
+      background-image: url(http://aremlab.com/media/colsubsidio/institucional/news/prevButton.svg) !important;
+      left: 0px;
+    }
+  }
+
+}

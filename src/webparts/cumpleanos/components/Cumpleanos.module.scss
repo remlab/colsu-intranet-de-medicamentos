@@ -1,0 +1,106 @@
+@import '~office-ui-fabric-react/dist/sass/References.scss';
+
+.birthday {
+  background: #f4f4f4;
+  padding: 2rem 0;
+
+  .bannerAction {
+    background: #fff;
+    width: 150px;
+    left: 20px;
+    display: flex;
+    padding: 0 10px;
+    border-radius: 100px;
+    justify-content: space-around;
+    align-items: center;
+
+    .actionText {
+      font-size: 10px;
+      color: #333;
+      font-family: 'Futura Std';
+    }
+  }
+
+  .calendar {
+    .schedule {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 1rem 2rem;
+      border-bottom: solid 1px #ccc;
+
+      .date {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        h3 {
+          font-family: 'Futura Std';
+          font-style: normal;
+          font-weight: 800;
+          font-size: 45px;
+          color: #D51A67;
+        }
+
+        p {
+          font-family: 'Futura Std';
+          font-style: normal;
+          font-weight: normal;
+          font-size: 20px;
+          color: #000000;
+          margin-left: 1rem;
+        }
+      }
+
+      .people {
+        h4 {
+          font-family: Helvetica Neue;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 21px;
+          color: #1E1E1E;
+        }
+
+        p {
+          font-family: 'Futura Std';
+          font-style: normal;
+          font-weight: 300;
+          font-size: 18px;
+          color: #000000;
+        }
+      }
+
+      .cta {
+        a {
+          background: #8FC05D;
+          border-radius: 60px;
+          padding: .5rem 2rem;
+          color: white;
+          text-decoration: none;
+          font-family: 'Futura Std';
+          font-size: 12px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          i {
+            margin: 0 5px;
+          }
+        }
+      }
+    }
+  }
+
+  .media {
+    margin-top: 3rem;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    text-align: center;
+
+    img {
+      width: 90%
+    }
+  }
+}

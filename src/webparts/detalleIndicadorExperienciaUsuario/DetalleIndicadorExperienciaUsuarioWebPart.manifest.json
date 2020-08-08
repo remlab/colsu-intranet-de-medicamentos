@@ -1,0 +1,78 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "3ede988e-002a-454e-a36b-e7f262e9b3b8",
+  "alias": "DetalleIndicadorExperienciaUsuarioWebPar",
+  "componentType": "WebPart",
+  // The "*" signifies that the version should be taken from the package.json
+  "version": "*",
+  "manifestVersion": 2,
+  // If true, the component can only be installed on sites where Custom Script is allowed.
+  // Components that allow authors to embed arbitrary script code should set this to true.
+  // https://support.office.com/en-us/article/Turn-scripting-capabilities-on-or-off-1f2c515f-5d7e-448a-9fd7-835da935584f
+  "requiresCustomScript": false,
+  "supportsFullBleed": true,
+  "supportedHosts": [
+    "SharePointWebPart"
+  ],
+  "preconfiguredEntries": [
+    {
+      "groupId": "5c03119e-3074-46fd-976b-c60198311f70", // Other
+      "group": {
+        "default": "Other"
+      },
+      "title": {
+        "default": "Detalle Indicador Experiencia Usuario"
+      },
+      "description": {
+        "default": "Detalle Indicador Experiencia de Usuario Intranet Medicamentos Colsubsidio"
+      },
+      "officeFabricIconFontName": "Page",
+      "properties": {
+        "title": "SERVICIO",
+        "subtitle": "AL CLIENTE",
+        "breadcrumb": {
+          "title": "Experiencia de usuario",
+          "link": "https://colsubsidio365.sharepoint.com/sites/IntranetdeMedicamentos/experiencia__de_usuario"
+        },
+        "indicadores": [
+          {
+            "titulo": "Tiempo de atención",
+            "icono": "Time",
+            "color": "#8FC05D",
+            "valor": "70.6%",
+            "image": null
+          },
+          {
+            "titulo": "Calidad en la atención",
+            "icono": "Heart",
+            "color": "#D51A67",
+            "valor": "87.42%",
+            "image": null
+          },
+          {
+            "titulo": "Infraestructura",
+            "icono": "Shop",
+            "color": "#25B0DC",
+            "valor": "70.63%",
+            "image": null
+          },
+          {
+            "titulo": "Faltantes",
+            "icono": "Stats",
+            "color": "#EFD53D",
+            "valor": "81.43%%",
+            "image": null
+          },
+          {
+            "titulo": "Variedad",
+            "icono": "Pills",
+            "color": "#071D66",
+            "valor": "82.61%",
+            "image": null
+          }
+        ],
+        "type": "main"
+      }
+    }
+  ]
+}

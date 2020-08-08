@@ -1,0 +1,1 @@
+{"version":3,"file":"IIntranetMedicamentosCRUDState.d.ts","sourceRoot":"","sources":["../../../../src/webparts/componentes/intranetMedicamentosCRUD/IIntranetMedicamentosCRUDState.ts"],"names":[],"mappings":"AAAA,OAAO,EAAS,SAAS,EAAE,MAAM,aAAa,CAAC;AAE/C,MAAM,WAAW,8BAA8B;IAC7C,MAAM,EAAE,MAAM,CAAC;IACf,KAAK,EAAE,SAAS,EAAE,CAAC;CACpB"}

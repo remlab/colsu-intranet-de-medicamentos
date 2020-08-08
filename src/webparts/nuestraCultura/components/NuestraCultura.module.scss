@@ -1,0 +1,36 @@
+@import '~office-ui-fabric-react/dist/sass/References.scss';
+@import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
+
+.nuestraCultura {
+  padding: 2rem 0;
+
+  &__media {
+    text-align: center;
+
+    img {
+      height: 300px;
+    }
+  }
+
+  &__cta {
+    display: block;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    font-family: 'Futura Std';
+    text-decoration: none;
+    color: #7C7C7C;
+
+    h2 {
+      font-family: Futura Std;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 44px;
+      text-transform: uppercase;
+      color: $ms-color-themePrimary;
+      @media screen and (max-width: 480px) {
+        font-size: 100%;
+      }
+    }
+  }
+}

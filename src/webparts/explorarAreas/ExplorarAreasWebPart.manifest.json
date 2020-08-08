@@ -1,0 +1,70 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "00906c57-b0af-431d-903e-67c1f1c1f2b4",
+  "alias": "ExplorarAreasWebPart",
+  "componentType": "WebPart",
+
+  // The "*" signifies that the version should be taken from the package.json
+  "version": "*",
+  "manifestVersion": 2,
+
+  // If true, the component can only be installed on sites where Custom Script is allowed.
+  // Components that allow authors to embed arbitrary script code should set this to true.
+  // https://support.office.com/en-us/article/Turn-scripting-capabilities-on-or-off-1f2c515f-5d7e-448a-9fd7-835da935584f
+  "requiresCustomScript": false,
+  "supportedHosts": ["SharePointWebPart"],
+  "supportsFullBleed": true,
+
+  "preconfiguredEntries": [{
+    "groupId": "5c03119e-3074-46fd-976b-c60198311f70", // Other
+    "group": { "default": "Other" },
+    "title": { "default": "Explorar por áreas" },
+    "description": { "default": "Explorar por áreas Inicio - Intranet de Medicamentos - Colsubisidio" },
+    "officeFabricIconFontName": "Page",
+    "properties": {
+      "title": "Explorar por",
+      "subtitle": "Áreas",
+      "items": [{
+        "title": "<strong>Canal</strong> Institucional",
+        "icon": "bottle",
+        "color": "#25B0DC",
+        "link": "https://colsubsidio365.sharepoint.com/sites/IntranetdeMedicamentos/canal-institucional"
+      },{
+        "title": "<strong>Canal</strong> Comercial",
+        "icon": "cart",
+        "color": "#A6CA00",
+        "link": "https://colsubsidio365.sharepoint.com/sites/IntranetdeMedicamentos/canal-comercial"
+      },{
+        "title": "<strong>Experiencia</strong> De Usuario",
+        "icon": "message",
+        "color": "#368090",
+        "link": "https://colsubsidio365.sharepoint.com/sites/IntranetdeMedicamentos/experiencia__de_usuario"
+      },{
+        "title": "<strong>Aseguramiento</strong> De Calidad",
+        "icon": "payroll",
+        "color": "#2B62B0",
+        "link": "https://colsubsidio365.sharepoint.com/sites/IntranetdeMedicamentos/aseguramiento_de_calidad"
+      },{
+        "title": "<strong>Gestión</strong> Humana",
+        "icon": "human",
+        "color": "#D51A67",
+        "link": "https://colsubsidio365.sharepoint.com/sites/IntranetdeMedicamentos/gestion_humana"
+      },{
+        "title": "<strong>Claudia</strong> Te Cuenta",
+        "icon": "nurse",
+        "color": "#F9D700",
+        "link": "https://colsubsidio365.sharepoint.com/sites/IntranetdeMedicamentos/claudia_te_cuenta"
+      },{
+        "title": "<strong>Servicios</strong> Gama",
+        "icon": "services",
+        "color": "#071D66",
+        "link": "https://colsubsidio365.sharepoint.com/sites/IntranetdeMedicamentos"
+      },{
+        "title": "<strong>Comunidad</strong> Medicamentos",
+        "icon": "group",
+        "color": "#8D0077",
+        "link": "https://colsubsidio365.sharepoint.com/sites/IntranetdeMedicamentos"
+      }]
+    }
+  }]
+}

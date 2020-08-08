@@ -1,0 +1,80 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "4c89ba9a-c368-482e-a06c-69bcd5972e30",
+  "alias": "IndicadoresExperienciaUsuarioWebPart",
+  "componentType": "WebPart",
+  // The "*" signifies that the version should be taken from the package.json
+  "version": "*",
+  "manifestVersion": 2,
+  // If true, the component can only be installed on sites where Custom Script is allowed.
+  // Components that allow authors to embed arbitrary script code should set this to true.
+  // https://support.office.com/en-us/article/Turn-scripting-capabilities-on-or-off-1f2c515f-5d7e-448a-9fd7-835da935584f
+  "requiresCustomScript": false,
+  "supportsFullBleed": true,
+  "supportedHosts": [
+    "SharePointWebPart"
+  ],
+  "preconfiguredEntries": [
+    {
+      "groupId": "5c03119e-3074-46fd-976b-c60198311f70", // Other
+      "group": {
+        "default": "Other"
+      },
+      "title": {
+        "default": "Indicadores Experiencia Usuario"
+      },
+      "description": {
+        "default": "Indicadores Experiencia de Usuario Intranet de medicamentos Colsubsidio."
+      },
+      "officeFabricIconFontName": "Page",
+      "properties": {
+        "title": "Indicadores",
+        "subtitle": "Experiencia de Usuario",
+        "indicadores": [
+          {
+            "titulo": "Servicio al cliente",
+            "valor": "82%",
+            "color": "#25B0DC",
+            "opcionA": {
+              "titulo": "Encuesta <strong>Institucional</strong>",
+              "valor": "81"
+            },
+            "opcionB": {
+              "titulo": "Encuesta <strong>Comercial</strong>",
+              "valor": "83"
+            },
+            "enlace": ""
+          },
+          {
+            "titulo": "Comprador incógnito",
+            "valor": "69%",
+            "color": "#8FC05D",
+            "opcionA": {
+              "titulo": "Resultados <strong>Institucional</strong>",
+              "valor": "73.5%"
+            },
+            "opcionB": {
+              "titulo": "Resultados <strong>Comercial</strong>",
+              "valor": "63.5%"
+            },
+            "enlace": ""
+          },
+          {
+            "titulo": "PQRS - Tasa",
+            "valor": "0.73",
+            "color": "#D51A67",
+            "opcionA": {
+              "titulo": "Resultados <strong>Institucional</strong>",
+              "valor": "0.13"
+            },
+            "opcionB": {
+              "titulo": "Resultados <strong>Comercial</strong>",
+              "valor": "1.42"
+            },
+            "enlace": ""
+          }
+        ]
+      }
+    }
+  ]
+}

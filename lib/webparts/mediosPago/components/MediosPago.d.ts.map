@@ -1,0 +1,1 @@
+{"version":3,"file":"MediosPago.d.ts","sourceRoot":"","sources":["../../../../src/webparts/mediosPago/components/MediosPago.tsx"],"names":[],"mappings":"AAAA,OAAO,KAAK,KAAK,MAAM,OAAO,CAAC;AAI/B,OAAO,EAAE,gBAAgB,EAAE,MAAM,oBAAoB,CAAC;AAOtD,MAAM,CAAC,OAAO,OAAO,UAAW,SAAQ,KAAK,CAAC,SAAS,CAAC,gBAAgB,EAAE,EAAE,CAAC;IACpE,MAAM,IAAI,KAAK,CAAC,YAAY,CAAC,gBAAgB,CAAC;CAuGtD"}

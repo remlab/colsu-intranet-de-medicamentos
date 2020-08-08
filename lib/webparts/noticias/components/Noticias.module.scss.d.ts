@@ -1,0 +1,31 @@
+declare const styles: {
+    bannerSwipper: string;
+    bannerSwipper__ButtonPrev: string;
+    bannerSwipper__ButtonNext: string;
+    noticias: string;
+    container: string;
+    row: string;
+    column: string;
+    'ms-Grid': string;
+    title: string;
+    subTitle: string;
+    description: string;
+    section_news: string;
+    contentText: string;
+    titleSection_featured: string;
+    secondaryButton: string;
+    section_news__featured: string;
+    section_news__featured__content: string;
+    section_news__featured__image: string;
+    section_news__newsCarousel: string;
+    titleSection: string;
+    conveniosCardContainer: string;
+    news: string;
+    news_content: string;
+    news__title: string;
+    news__description: string;
+    nextButtonClassName: string;
+    prevButtonClassName: string;
+};
+export default styles;
+//# sourceMappingURL=Noticias.module.scss.d.ts.map

@@ -1,0 +1,94 @@
+@import '~office-ui-fabric-react/dist/sass/References.scss';
+
+.row {
+  @include ms-Grid;
+  @include ms-Grid-row;
+  @include ms-fontColor-white;
+  background-color: $ms-color-themeDark;
+  padding: 20px;
+}
+
+.column {
+  @include ms-Grid-col;
+  @include ms-lg10;
+  @include ms-xl8;
+  @include ms-xlPush2;
+  @include ms-lgPush1;
+}
+
+.announcement {
+  padding: 3rem 0;
+
+  .slide {
+    margin: 0 !important;
+  }
+
+  .card {
+    padding: 2rem;
+    margin: 2rem 0;
+
+    &__title {
+      h3 {
+        font-family: Helvetica Neue;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        color: #D51A67;
+      }
+    }
+
+    &__subTitle {
+      p {
+        font-family: 'Futura Std';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        color: #000000;
+      }
+    }
+
+    &__description {
+      margin: 1rem 0;
+
+      p {
+        font-family: 'Futura Std';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        color: #000000;
+      }
+    }
+
+    &__cta {
+      a {
+        font-family: 'Futura Std';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 11px;
+        color: #D51A67;
+        text-decoration: none;
+
+        &:hover {
+          &:before {
+            content: '';
+          }
+
+          &:after {
+            content: '>';
+          }
+        }
+
+        &:before {
+          content: '[';
+          transition: all 1s;
+        }
+
+        &:after {
+          content: ']';
+          transition: all 1s;
+        }
+      }
+    }
+  }
+
+}
